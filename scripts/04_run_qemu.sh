@@ -40,8 +40,8 @@ exec qemu-system-x86_64 \
   -no-reboot \
   -kernel "$BZIMAGE" \
   -initrd "$INITRAMFS" \
-  -append "console=ttyS0 quiet" \
-  -m 512M \
-  -smp 2 \
+  -append "console=ttyS0 debug loglevel=7 nokaslr mitigations=off" \
+  -m 4G \
+  -smp 8 \
   -netdev user,id=n1 \
   -device e1000,netdev=n1
